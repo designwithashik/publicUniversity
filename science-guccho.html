@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #gucchoTable{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="flex">
+            <h1>Public University Eligibility Checker</h1>
+            <ul>
+                <li><a href="">Science</a></li>
+                <li><a href="">Business Studies</a></li>
+                <li><a href="">Humanities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex">
+        <!-- Guccho 
+        ----- -->
+        <table class="guccho">
+            <tr>
+              <th colspan="2">Guccho University Eligibility Checker</th>
+            </tr>
+            <tr>
+                <td>SSC GPA</td>
+                <td><input type="number" name="" id="sscGpa"></td>
+            </tr>
+            <tr>
+                <td>HSC GPA</td>
+                <td><input type="number" name="" id="hscGpa"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="checkEli()">Check Eligibility</button></td>
+              </tr>
+              <tr>
+                <td colspan="2" id="output"></td>
+              </tr>
+            </table>
+        <table id="gucchoTable">
+            <thead>
+                <tr><td>No</td><td>University Name</td></tr> 
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>University</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>University</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </main>
+    <!-- Javascript Mama
+    ------------------ -->
+
+    <script> 
+        function checkEli(){
+           var sscValue = document.getElementById("sscGpa").value;
+           var hscValue = document.getElementById("hscGpa").value;
+           var totalGpa = parseFloat(sscValue) + parseFloat(hscValue);
+           var x = document.getElementById('gucchoTable');
+           if(totalGpa>=7) {
+                x.style.visibility = 'visible';
+      document.getElementById("output").innerHTML = "Congratulation, you can apply for Guccho Universities below ";
+    } 
+        else {
+      x.style.visibility = 'hidden';
+      document.getElementById("output").innerHTML = "Sorry, Unfortunately you cannot apply for Guccho Admission ";
+
+
+    }
+        }
+    </script>
+</body>
+</html>

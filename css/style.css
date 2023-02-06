@@ -1,0 +1,132 @@
+/* Utilities */
+* {
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+main, nav {
+  font-family: Arial, sans-serif;
+  /* padding: 0 auto; */
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  /* padding: 0; */
+
+}
+a {
+  /* display: fblex; */
+  text-decoration: none;
+  /* margin: 0 auto */
+  /* font-size: 30px;
+  background-color: #1da1f2;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700; */
+}
+
+/* Guccho Input style */
+
+.guccho {
+    width: 80%;
+    font-size: 20px;
+    color: #1da1f2;
+    border-collapse: collapse;
+  }
+
+  .guccho th {
+    background-color: #e6ecf0;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  .guccho td {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #e6ecf0;
+  }
+
+  .guccho input[type="number"] {
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .guccho button, header a {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 auto;
+    /* padding: 0 auto; */
+    display: block;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    /* margin-bottom: 20px; */
+  }
+
+  .guccho button:hover, header a:hover, .guccho #output:hover {
+    background: linear-gradient(to bottom, #1da1f2, #fff);
+    font-size: 30px;
+    padding: 20px 35px;
+    border: 5px solid ;
+    color: #000;
+  }
+
+  .guccho #output {
+    font-weight: bold;
+    text-align: center;
+    transition: all;
+    transition-duration: 2s;
+  }
+  
+
+  /* University table style 
+------------------------- */
+#gucchoTable {
+    width: 100%;
+    border: 1px solid #1da1f2;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #14171a;
+}
+
+#gucchoTable thead tr td {
+    background-color: #1da1f2;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#gucchoTable tbody tr td {
+    border-bottom: 1px solid #1da1f2;
+    padding: 10px;
+    text-align: center;
+}
+
+#gucchoTable tbody tr:nth-child(even) {
+    background-color: #e6ecf0;
+}
+
+
+
+
